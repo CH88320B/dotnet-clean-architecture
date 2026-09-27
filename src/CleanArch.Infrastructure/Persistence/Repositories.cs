@@ -3,6 +3,7 @@ using CleanArch.Application.Abstractions;
 using CleanArch.Application.Common;
 using CleanArch.Domain.Common;
 using CleanArch.Domain.Entities;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 
 namespace CleanArch.Infrastructure.Persistence;
@@ -110,6 +111,11 @@ internal sealed class UnitOfWork(AppDbContext db, IProductRepository products, I
         catch (DbUpdateConcurrencyException)
         {
             throw new ConflictException("The resource was modified by another request. Reload and try again.");
+        }
+        catch (DbUpdateException ex) when (ex.InnerException is SqlException { Number: 2601 or 2627 })
+        {
+            // Unique index violation: a concurrent request inserted the same SKU/name after our existence check.
+            throw new ConflictException("A resource with the same unique key already exists.");
         }
     }
 }
