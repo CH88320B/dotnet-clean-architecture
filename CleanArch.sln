@@ -1,0 +1,61 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A9FC0809-89F0-4BF1-AB12-B60940AFC16F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{2ABECE4B-39F2-457F-BD93-1F8F9392F67D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.Domain", "src\CleanArch.Domain\CleanArch.Domain.csproj", "{FE1A50E3-F9FB-43DF-AF04-ED3AD296777E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.Application", "src\CleanArch.Application\CleanArch.Application.csproj", "{A9800C6E-498F-47D9-A15F-D573E7C41B28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.Infrastructure", "src\CleanArch.Infrastructure\CleanArch.Infrastructure.csproj", "{A16E138F-4D94-4D16-A3E7-A30765976B2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.Api", "src\CleanArch.Api\CleanArch.Api.csproj", "{BBF9E5CE-84A1-40C6-A0CC-2C268277776E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.Domain.UnitTests", "tests\CleanArch.Domain.UnitTests\CleanArch.Domain.UnitTests.csproj", "{66DE00C6-C78A-43A3-BC2C-7D0194309C19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.Application.UnitTests", "tests\CleanArch.Application.UnitTests\CleanArch.Application.UnitTests.csproj", "{5FFA41A5-DFBC-4178-ABBC-FCB2A7DF2AAF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE1A50E3-F9FB-43DF-AF04-ED3AD296777E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE1A50E3-F9FB-43DF-AF04-ED3AD296777E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE1A50E3-F9FB-43DF-AF04-ED3AD296777E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE1A50E3-F9FB-43DF-AF04-ED3AD296777E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9800C6E-498F-47D9-A15F-D573E7C41B28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9800C6E-498F-47D9-A15F-D573E7C41B28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9800C6E-498F-47D9-A15F-D573E7C41B28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9800C6E-498F-47D9-A15F-D573E7C41B28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A16E138F-4D94-4D16-A3E7-A30765976B2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A16E138F-4D94-4D16-A3E7-A30765976B2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A16E138F-4D94-4D16-A3E7-A30765976B2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A16E138F-4D94-4D16-A3E7-A30765976B2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBF9E5CE-84A1-40C6-A0CC-2C268277776E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBF9E5CE-84A1-40C6-A0CC-2C268277776E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBF9E5CE-84A1-40C6-A0CC-2C268277776E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBF9E5CE-84A1-40C6-A0CC-2C268277776E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66DE00C6-C78A-43A3-BC2C-7D0194309C19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66DE00C6-C78A-43A3-BC2C-7D0194309C19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66DE00C6-C78A-43A3-BC2C-7D0194309C19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66DE00C6-C78A-43A3-BC2C-7D0194309C19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FFA41A5-DFBC-4178-ABBC-FCB2A7DF2AAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FFA41A5-DFBC-4178-ABBC-FCB2A7DF2AAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FFA41A5-DFBC-4178-ABBC-FCB2A7DF2AAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FFA41A5-DFBC-4178-ABBC-FCB2A7DF2AAF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FE1A50E3-F9FB-43DF-AF04-ED3AD296777E} = {A9FC0809-89F0-4BF1-AB12-B60940AFC16F}
+		{A9800C6E-498F-47D9-A15F-D573E7C41B28} = {A9FC0809-89F0-4BF1-AB12-B60940AFC16F}
+		{A16E138F-4D94-4D16-A3E7-A30765976B2A} = {A9FC0809-89F0-4BF1-AB12-B60940AFC16F}
+		{BBF9E5CE-84A1-40C6-A0CC-2C268277776E} = {A9FC0809-89F0-4BF1-AB12-B60940AFC16F}
+		{66DE00C6-C78A-43A3-BC2C-7D0194309C19} = {2ABECE4B-39F2-457F-BD93-1F8F9392F67D}
+		{5FFA41A5-DFBC-4178-ABBC-FCB2A7DF2AAF} = {2ABECE4B-39F2-457F-BD93-1F8F9392F67D}
+	EndGlobalSection
+EndGlobal
